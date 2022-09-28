@@ -37,14 +37,30 @@ def selection_from_collection(Card_Set, Card_Subset):
 # Permutaion P(n,k) -  k-permutations of n are the different ordered arrangements of a k-element subset of an n-set
 
 # Cardinality of set A notation - |A|.
-Cardinality = 49
-Cardinality_Subset = 7
+Cardinality = 20
+Cardinality_Subset = 4
+result_set = []
+
+combination_repeat = 2 # count of repeating C(n,k)
+for i in range(0, combination_repeat):
+    print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+    result_set.append(selection_from_collection(Cardinality, Cardinality_Subset))
 
 print("\n=============================================================================================")
 print("Selection is:")
 print("=============================================================================================")
-ary1 = selection_from_collection(Cardinality,Cardinality_Subset)
-ary2 = selection_from_collection(Cardinality,Cardinality_Subset)
-print(ary1)
-print(ary2)
-print("=============================================================================================")
+
+for lst in result_set:
+    print(lst)
+
+#print("\n=============================================================================================")
+#print("Selection is:")
+#print("=============================================================================================")
+
+#ary1 = selection_from_collection(Cardinality,Cardinality_Subset)
+#ary2 = selection_from_collection(Cardinality,Cardinality_Subset)
+#ary3 = selection_from_collection(Cardinality,Cardinality_Subset)
+#print(ary1)
+#print(ary2)
+#print(ary3)
+#print("=============================================================================================")
