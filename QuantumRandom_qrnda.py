@@ -1,7 +1,7 @@
 import quantumrandom
 # Monkey patching! Redifining create context as unverified one!!!!
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+#import ssl
+#ssl._create_default_https_context = ssl._create_unverified_context
 # Monkye patching!  End of hack.
 
 def selection_from_collection(Card_Set, Card_Subset):
@@ -41,7 +41,7 @@ Cardinality = 20
 Cardinality_Subset = 4
 result_set = []
 
-combination_repeat = 2 # count of repeating C(n,k)
+combination_repeat = 1 # count of repeating C(n,k)
 for i in range(0, combination_repeat):
     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
     result_set.append(selection_from_collection(Cardinality, Cardinality_Subset))
